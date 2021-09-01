@@ -46,7 +46,7 @@ class _ExplorePageState extends State<ExplorePage> {
 
   Widget searchBar(){
     return Container(
-        height: 30,
+        height: 36,
         decoration: BoxDecoration(
           color: Colors.grey.shade900,
           borderRadius: BorderRadius.all(Radius.circular(10.0))

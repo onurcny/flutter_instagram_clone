@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.grey,
         ),
+        indicatorColor: Colors.white,
       ),
       debugShowCheckedModeBanner: false,
       home: BottomNavigator()
