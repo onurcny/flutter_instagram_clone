@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.grey,
+          selectedIconTheme: IconThemeData(size: 30),
+          unselectedIconTheme: IconThemeData(size: 30),
         ),
         indicatorColor: Colors.white,
       ),

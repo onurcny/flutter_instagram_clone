@@ -15,7 +15,7 @@ class _SearchPageState extends State<SearchPage> {
     Tab(text: "Places",),
   ];
   final _tabPages = <Widget>[
-    Center(child: Text("Başlıca"),),
+    Center(child: Text("Başlıca", style: TextStyle(color: Colors.grey.shade300),),),
     Center(child: Text("Hesaplar"),),
     Center(child: Text("Etiketler"),),
     Center(child: Text("Yerler"),),
@@ -39,6 +39,7 @@ class _SearchPageState extends State<SearchPage> {
             },
           ),
         ),
+        body: TabBarView(children: _tabPages,),
       ),
     );
   }
