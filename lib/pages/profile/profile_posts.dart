@@ -8,37 +8,31 @@ class ProfilePosts extends StatefulWidget {
   _ProfilePostsState createState() => _ProfilePostsState();
 }
 
-class _ProfilePostsState extends State<ProfilePosts> with SingleTickerProviderStateMixin{
-  late TabController _controller;
+class _ProfilePostsState extends State<ProfilePosts>{
 
   @override
-  void initState() {
-    super.initState();
-    _controller = new TabController(length: 2, vsync: this);
-  }
-  @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
-        TabBar(
-          controller: _controller,
-          tabs: [
-            Tab(
-              icon: const Icon(Icons.grid_on),
-            ),
-            Tab(
-              icon: const Icon(Icons.assignment_ind_outlined),
-            ),
-          ],
-        ),
-        Container(
-          height: 100,
-          color: Colors.purple,
-          child: TabBarView(
-            controller: _controller,
+        Align(
+          alignment: Alignment.topLeft,
+          child: Wrap(
             children: [
-              Center(),
-              Center(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
+              PostSmall(),
             ],
           ),
         ),

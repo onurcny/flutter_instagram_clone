@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_flutter/pages/messenger/messenger_page.dart';
+import 'package:instagram_flutter/pages/share/share_page.dart';
 import 'package:instagram_flutter/widgets/post/post.dart';
 import 'package:instagram_flutter/widgets/story/main_stories.dart';
 
@@ -17,7 +18,12 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(
         title: Text('Instagram'),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.add_box_outlined)),
+          IconButton(
+            onPressed: (){
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => SharePage()));
+            }, 
+            icon: Icon(Icons.add_box_outlined),
+          ),
           IconButton(onPressed: (){}, icon: Icon(Icons.favorite_outline)),
           IconButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context) => MessengerPage()));

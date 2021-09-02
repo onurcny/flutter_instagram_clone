@@ -12,7 +12,6 @@ class _ProfileInfoState extends State<ProfileInfo> {
   Widget build(BuildContext context) {
     return Container(
       height: 200,
-      color: Colors.grey,
     );
   }
 }
